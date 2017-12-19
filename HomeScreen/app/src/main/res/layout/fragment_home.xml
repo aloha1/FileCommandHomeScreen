@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_fragment_home"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/layout_fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/card_appstore" />
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerview_home"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_home_editor"
+                android:layout_width="@dimen/card_category_width"
+                android:layout_height="@dimen/image_bot_height"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_margin_smaller"
+                android:layout_marginTop="@dimen/activity_margin_smaller"
+                android:src="@drawable/editor" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_home_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bot_bar_height"
+                android:layout_below="@+id/image_home_editor"
+                android:layout_margin="@dimen/activity_margin_smaller"
+                android:layout_toLeftOf="@+id/card_home_analyzer">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_home_internal_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/internal_storage"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_home_internal_storage"
+                        android:text="@string/text_tick_internal_shared_storage"/>
+                    <ProgressBar
+                            android:id="@+id/indicator"
+                            android:layout_toRightOf="@+id/image_home_internal_storage"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/view_me_smaller"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/activity_margin_smaller"
+                            android:progressDrawable="@drawable/memory_indicator_progress" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_home_analyzer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/image_home_editor"
+                android:layout_margin="@dimen/activity_margin_smaller">
+
+                <ImageView
+                    android:id="@+id/image_home_analyzer"
+                    android:layout_width="@dimen/bot_bar_height"
+                    android:layout_height="@dimen/bot_bar_height"
+                    android:src="@drawable/analyzer" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_home_progress_external"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bot_bar_height"
+                android:layout_below="@+id/card_home_progress"
+                android:layout_margin="@dimen/activity_margin_smaller"
+                android:layout_toLeftOf="@+id/card_home_analyzer">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_home_external_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/internal_storage"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_home_external_storage"
+                        android:text="@string/text_tick_external_shared_storage"/>
+                    <ProgressBar
+                        android:id="@+id/indicator_external_storage"
+                        android:layout_toRightOf="@+id/image_home_external_storage"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_me_smaller"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_margin_smaller"
+                        android:progressDrawable="@drawable/memory_indicator_progress" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_home_external_analyzer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/card_home_progress"
+                android:layout_margin="@dimen/activity_margin_smaller">
+
+                <ImageView
+                    android:id="@+id/image_home_external_analyzer"
+                    android:layout_width="@dimen/bot_bar_height"
+                    android:layout_height="@dimen/bot_bar_height"
+                    android:src="@drawable/analyzer" />
+            </android.support.v7.widget.CardView>
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/card_home_progress_sdcard"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="@dimen/bot_bar_height"-->
+                <!--android:layout_below="@+id/card_home_progress_external"-->
+                <!--android:layout_margin="@dimen/activity_margin_smaller"-->
+                <!--android:layout_toLeftOf="@+id/card_home_analyzer">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/image_home_progress_sdcard"-->
+                        <!--android:layout_width="@dimen/bot_bar_height"-->
+                        <!--android:layout_height="@dimen/bot_bar_height"-->
+                        <!--android:src="@drawable/ic_doc_doc_am"/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_toRightOf="@+id/image_home_progress_sdcard"-->
+                        <!--android:text="@string/text_tick_sdcard_shared_storage"/>-->
+                    <!--<ProgressBar-->
+                        <!--android:id="@+id/indicator_sdcard_storage"-->
+                        <!--android:layout_toRightOf="@+id/image_home_progress_sdcard"-->
+                        <!--style="@android:style/Widget.ProgressBar.Horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/view_me_smaller"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginRight="@dimen/activity_margin_smaller"-->
+                        <!--android:progressDrawable="@drawable/memory_indicator_progress" />-->
+                <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_home_progress_sdcard"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/bot_bar_height"
+                android:layout_below="@+id/card_home_progress_external"
+                android:layout_margin="@dimen/activity_margin_smaller"
+                android:layout_toLeftOf="@+id/card_home_sdcard_analyzer">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/image_home_sdcard_storage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/internal_storage"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/image_home_sdcard_storage"
+                        android:text="@string/text_tick_sdcard_shared_storage"/>
+                    <ProgressBar
+                        android:id="@+id/indicator_sdcard_storage"
+                        android:layout_toRightOf="@+id/image_home_sdcard_storage"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_me_smaller"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_margin_smaller"
+                        android:progressDrawable="@drawable/memory_indicator_progress" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_home_sdcard_analyzer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/card_home_external_analyzer"
+                android:layout_margin="@dimen/activity_margin_smaller">
+
+                <ImageView
+                    android:id="@+id/image_home_sdcard_analyzer"
+                    android:layout_width="@dimen/bot_bar_height"
+                    android:layout_height="@dimen/bot_bar_height"
+                    android:src="@drawable/analyzer" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

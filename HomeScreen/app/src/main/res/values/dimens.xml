@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="drawer_width">304dp</dimen>
+    <dimen name="fastscroller_track_height">70dp</dimen>
+    <dimen name="fastscroller_track_width">7dp</dimen>
+    <dimen name="fastscroller_track_padding">3dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="search_view_margin">10dp</dimen>
+    <dimen name="search_view_edit_text_width">240dp</dimen>
+    <dimen name="search_view_back_margin_left_right">16dp</dimen>
+    <dimen name="search_view_info_margin_left_right">16dp</dimen>
+
+    <dimen name="minimal_material_padding">16dp</dimen>
+    <dimen name="check_icon_margin_bottom_right">10dp</dimen>
+    <!--<dimen name="icon_width">72dp</dimen>-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="minimal_row_height">100dp</dimen>
+    <dimen name="minimal_header_size">40dp</dimen>
+    <dimen name="minimal_row_size">72dp</dimen>
+    <dimen name="minimal_icon_size">40dp</dimen>
+    <dimen name="minimal_icon_parent_width">56dp</dimen>
+    <dimen name="tick_icon_size">20dp</dimen>
+    <dimen name="check_icon_size_grid">40dp</dimen>
+    <dimen name="check_icon_padding">4dp</dimen>
+    <dimen name="icon_margin_top">16dp</dimen>
+    <dimen name="check_view_margin">2dp</dimen>
+
+    <dimen name="dialog_category">14sp</dimen>
+    <dimen name="dialog_list">16sp</dimen>
+
+    <dimen name="material_generic">16dp</dimen>
+    <dimen name="material_generic_medium">32dp</dimen>
+    <dimen name="material_generic_large">72dp</dimen>
+    <dimen name="material_generic_card_elevation">4dp</dimen>
+    <dimen name="material_generic_title">16sp</dimen>
+    <dimen name="material_generic_title_large">20sp</dimen>
+    <dimen name="material_generic_title_summary">12sp</dimen>
+    <dimen name="material_generic_list_item">72dp</dimen>
+
+    <dimen name="material_sheet_row_height_title">56dp</dimen>
+    <dimen name="material_sheet_row_height_content">48dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+
+    <dimen name="spacebetweenitems_properties_dialog">10dp</dimen>
+
+    <dimen name="list_header_height">48dp</dimen>
+    <dimen name="list_header_textsize">16sp</dimen>
+
+
+    <!--added-->
+    <dimen name="view_toolbar_width">1dp</dimen>
+    <dimen name="view_me_smaller">2dp</dimen>
+    <dimen name="view_me_width">3dp</dimen>
+    <dimen name="searchview_small_margin">4dp</dimen>
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="normal_margin">5dp</dimen>
+    <dimen name="discover_more_margin">7dp</dimen>
+    <dimen name="margin_left_small">9dp</dimen>
+    <dimen name="image_small_margin">10dp</dimen>
+    <dimen name="text_small_size">10sp</dimen>
+    <dimen name="activity_margin_smaller">11dp</dimen>
+    <dimen name="activity_small_margin">12dp</dimen>
+    <dimen name="text_keyword_size">12sp</dimen>
+    <dimen name="activity_margin_left">13dp</dimen>
+    <dimen name="icon_height">14dp</dimen>
+    <dimen name="searchview_margin">14dp</dimen>
+    <dimen name="text_subtitle_size">15sp</dimen>
+    <dimen name="icon_smaller_width">16dp</dimen>
+    <dimen name="button_margin">18dp</dimen>
+    <dimen name="card_margin">18dp</dimen>
+    <dimen name="icon_width">19dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_bigger_size">20sp</dimen>
+    <dimen name="image_small_size">20dp</dimen>
+    <dimen name="home_card_height">22dp</dimen>
+    <dimen name="text_digit_height">23dp</dimen>
+    <dimen name="digit_big_height">24dp</dimen>
+    <dimen name="me_favorite_title_size">24sp</dimen>
+    <dimen name="margin_big_top">26dp</dimen>
+    <dimen name="searchview_height">28dp</dimen>
+    <dimen name="image_bot_height">31dp</dimen>
+    <dimen name="activity_title_margin">32dp</dimen>
+    <dimen name="discover_title_size">33dp</dimen>
+    <dimen name="button_register_height">33dp</dimen>
+    <dimen name="edit_height">35dp</dimen>
+    <dimen name="text_title_size">40sp</dimen>
+    <dimen name="text_title_height">40dp</dimen>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="bot_bar_height">48dp</dimen>
+    <dimen name="icon_size">48dp</dimen>
+    <dimen name="text_me_height">54dp</dimen>
+    <dimen name="logo_margin_top">58dp</dimen>
+    <dimen name="card_category_height">62dp</dimen>
+    <dimen name="text_logo_height">64dp</dimen>
+    <dimen name="imageview_size">72dp</dimen>
+    <dimen name="image_logo_size">75dp</dimen>
+    <dimen name="image_discover_height">77dp</dimen>
+    <dimen name="text_logo_width">92dp</dimen>
+    <dimen name="image_history_width">95dp</dimen>
+    <dimen name="card_history_height">97dp</dimen>
+    <dimen name="card_discover_height">117dp</dimen>
+    <dimen name="button_margin_bot">124dp</dimen>
+    <dimen name="card_category_width">132dp</dimen>
+    <dimen name="card_discover_width">136dp</dimen>
+    <dimen name="image_recommend_height">147dp</dimen>
+    <dimen name="button_register_width">148dp</dimen>
+    <dimen name="card_history_width">240dp</dimen>
+    <dimen name="detail_imageview">168dp</dimen>
+    <dimen name="me_favorite_height">169dp</dimen>
+    <dimen name="videoview_height">240dp</dimen>
+    <dimen name="login_height">350dp</dimen>
+    <dimen name="searchview_width">281dp</dimen>
+    <dimen name="container_view_height">514dp</dimen>
+</resources>
