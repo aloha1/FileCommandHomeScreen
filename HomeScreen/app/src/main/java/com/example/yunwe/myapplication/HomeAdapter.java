@@ -12,11 +12,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bgsltd.file_command.adapters.helper.ItemTouchHelperAdapter;
-import com.bgsltd.file_command.fragments.MusicFragment;
-import com.bgsltd.file_command.fragments.PhotoFragment;
-import com.bgsltd.file_command.fragments.VideoFragment;
-import com.bgsltd.file_command.utils.ClassBean;
+
+import com.example.yunwe.myapplication.helper.ItemTouchHelperAdapter;
 
 import java.util.Collections;
 import java.util.List;
@@ -81,10 +78,10 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
                 break;
             case "Picture":
                 Log.d(TAG, res);
-                ((MainActivity)mContext).addHomeFragment(new PhotoFragment());
+//                ((MainActivity)mContext).addHomeFragment(new PhotoFragment());
                 break;
             case "Music":
-                ((MainActivity) mContext).addHomeFragment(new MusicFragment());
+//                ((MainActivity) mContext).addHomeFragment(new MusicFragment());
                 break;
             case "Archives":
                 break;
@@ -95,7 +92,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> i
             case "Recycler Bin":
                 break;
             case "Videos":
-                ((MainActivity) mContext).addHomeFragment(new VideoFragment());
+//                ((MainActivity) mContext).addHomeFragment(new VideoFragment());
                 break;
             case "Recent Files":
                 break;

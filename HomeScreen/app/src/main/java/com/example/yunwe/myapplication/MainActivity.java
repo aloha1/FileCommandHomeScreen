@@ -1,6 +1,6 @@
 package com.example.yunwe.myapplication;
 
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addNewFragment(Fragment fragment){
-        getFragmentManager().beginTransaction().replace(R.id.container, fragment, "SubFragment")
+        getFragmentManager().beginTransaction().replace(R.id.main_content, fragment, "SubFragment")
                 .addToBackStack("SubFragment").commit();
     }
 }

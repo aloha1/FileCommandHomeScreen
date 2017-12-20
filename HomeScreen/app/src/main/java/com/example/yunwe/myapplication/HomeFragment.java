@@ -1,5 +1,6 @@
 package com.example.yunwe.myapplication;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -8,7 +9,6 @@ import android.os.Environment;
 import android.os.StatFs;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.AppCompatEditText;
 import android.support.v7.widget.CardView;
@@ -30,14 +30,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bgsltd.file_command.activities.AddCategoryActivity;
-import com.bgsltd.file_command.activities.InterAd_Activity;
-import com.bgsltd.file_command.adapters.HomeAdapter;
-import com.bgsltd.file_command.adapters.helper.SimpleItemTouchHelperCallback;
-import com.bgsltd.file_command.database.Category;
-import com.bgsltd.file_command.database.CategoryRepo;
-import com.bgsltd.file_command.utils.ClassBean;
-import com.bgsltd.file_command.utils.color.ColorUsage;
+import com.example.yunwe.myapplication.helper.SimpleItemTouchHelperCallback;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -122,16 +115,16 @@ public class HomeFragment extends Fragment {
         imageEditor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mainActivity, AddCategoryActivity.class);
-                mainActivity.startActivity(intent);
+//                Intent intent = new Intent(mainActivity, AddCategoryActivity.class);
+//                mainActivity.startActivity(intent);
             }
         });
         CardView cardView = view.findViewById(R.id.card_normal);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mainActivity, InterAd_Activity.class);
-                mainActivity.startActivity(intent);
+//                Intent intent = new Intent(mainActivity, InterAd_Activity.class);
+//                mainActivity.startActivity(intent);
             }
         });
 
@@ -139,21 +132,21 @@ public class HomeFragment extends Fragment {
         cardViewProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mainActivity.goToMain("");
+                //mainActivity.goToMain("");
             }
         });
         CardView cardExternalProgress = view.findViewById(R.id.card_home_progress_external);
         cardExternalProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mainActivity.goToMain("");
+                //mainActivity.goToMain("");
             }
         });
         CardView cardSDCardProgress = view.findViewById(R.id.card_home_progress_sdcard);
         cardSDCardProgress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mainActivity.goToMain("");
+                //mainActivity.goToMain("");
             }
         });
         //final TextView occupiedSpaceText = (TextView) view.findViewById(R.id.occupiedSpace);
@@ -210,10 +203,10 @@ public class HomeFragment extends Fragment {
         }
     }
 
-    @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        mainActivity.getMenuInflater().inflate(R.menu.empty, menu);
-    }
+//    @Override
+//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+//        mainActivity.getMenuInflater().inflate(R.menu.empty, menu);
+//    }
 
     private void addToFavorite(String topic) {
         CategoryRepo repo = new CategoryRepo(getActivity());
