@@ -115,18 +115,18 @@ public class HomeFragment extends Fragment {
         imageEditor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(mainActivity, AddCategoryActivity.class);
-//                mainActivity.startActivity(intent);
+                Intent intent = new Intent(mainActivity, AddCategoryActivity.class);
+                mainActivity.startActivity(intent);
             }
         });
-        CardView cardView = view.findViewById(R.id.card_normal);
-        cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+//        CardView cardView = view.findViewById(R.id.card_normal);
+//        cardView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
 //                Intent intent = new Intent(mainActivity, InterAd_Activity.class);
 //                mainActivity.startActivity(intent);
-            }
-        });
+//            }
+//        });
 
         CardView cardViewProgress = view.findViewById(R.id.card_home_progress);
         cardViewProgress.setOnClickListener(new View.OnClickListener() {

@@ -52,7 +52,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:text="GET"
-                android:textColor="@color/primary_blue" />
+                android:textColor="@color/colorPrimary" />
 
         </RelativeLayout>
 
